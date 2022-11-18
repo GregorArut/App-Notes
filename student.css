@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 20px;
+}
+
+.container {
+  width: 30%;
+  margin: 30px auto;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: 1px solid #a39f9f82;
+  box-shadow: 1px 3px 7px 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.input_menu {
+  width: 85%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid rgb(191, 186, 186);
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.button {
+  width: 12%;
+  height: 50px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(6, 176, 248);
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes {
+  margin-top: 20px;
+  height: 330px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: auto;
+}
+#notes_text {
+  padding-left: 20px;
+  padding: 20px 15px;
+  color: rgb(67, 65, 65);
+}
+.input_notes {
+  margin-top: 10px;
+  padding: 8px 0 8px 15px;
+  background-color: rgb(234, 230, 230);
+  /*  border: 1px solid rgb(25, 24, 24);*/
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio_item {
+  padding-left: 15px;
+  word-break: break-all;
+}
+/*низ-----------------------*/
+.menu_out {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.out {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button_reset {
+  width: 25%;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  background-color: rgb(250, 70, 70);
+  color: white;
+  cursor: pointer;
+}
+
+/*--ЗМІНА CHECKBOX------------------------------*/
+/* .reserv-radio-input {
+  width: 15px;
+  height: 15px;
+}
+.reserv-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.reserv-radio-input:checked {
+  accent-color: rgb(33 171 39);
+  width: 16px;
+  height: 16px;
+}
+.reserv-radio-input:checked ~ .radio_item {
+  text-decoration: line-through;
+} */
+.reserv-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.reserv-radio-input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px;
+  background-color: rgba(240, 234, 234, 0);
+  border-radius: 50%;
+  border: 2px solid rgb(169, 165, 165);
+}
+.reserv-radio-input:checked {
+  background-color: rgba(177, 243, 177, 0);
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(38, 184, 38);
+}
+
+.reserv-radio-input:checked:before {
+  content: "";
+  border-radius: 50%;
+  background-color: rgb(38, 184, 38);
+  padding: 6px;
+}
+.reserv-radio-input:checked ~ .radio_item {
+  text-decoration: line-through;
+}
+/*-----------------------------------------------*/
+/* ICON ---------------------------*/
+.icon {
+  width: 40%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.edit {
+  padding-top: 9px;
+  margin-right: 10px;
+}
+
+.basket {
+  width: 20px;
+  height: 20px;
+}
